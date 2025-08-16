@@ -41,10 +41,10 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center" onclick="return false;">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <button id="bug-fixed-btn" class="bug-fixed-button" onclick="fixBug()">
+        <button id="bug-fixed-btn" class="bug-fixed-button" onclick="fixBug(event)">
           <span class="bug-text">Bug</span>
           <span class="fixed-text">fixed</span>
         </button>

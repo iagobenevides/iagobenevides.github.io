@@ -221,7 +221,13 @@
   /**
    * Bug/Fixed Button Function
    */
-  window.fixBug = function() {
+  window.fixBug = function(event) {
+    // Previne o comportamento padrão do link
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    
     const button = document.getElementById('bug-fixed-btn');
     if (button && !button.classList.contains('fixed')) {
       button.classList.add('fixed');
